@@ -3,7 +3,7 @@ This is a sample program to show how to draw using the Python programming
 language and the Arcade library.
 """
 
-# Import the "arcade" library (assuming that the library is installed using pip install arcad)
+# Import the "arcade" library
 import arcade
 
 # Open up a window.
