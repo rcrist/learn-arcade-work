@@ -9,9 +9,11 @@ import arcade
 SCREEN_WIDTH = 600
 SCREEN_HEIGHT = 600
 
+def draw_grass():
+    arcade.draw_lrbt_rectangle_filled(0, 599, 0, 300, arcade.csscolor.GREEN)
+
 def draw_circular_tree(x, y):
     # Draw tree #1
-    arcade.draw_lrbt_rectangle_filled(x, 599, y, 300, arcade.csscolor.GREEN)
     arcade.draw_rect_filled(arcade.XYWH(x+100, y+320, 20, 60), arcade.csscolor.SIENNA)
     arcade.draw_circle_filled(x+100, y+350, 30, arcade.csscolor.DARK_GREEN)
 
@@ -66,6 +68,7 @@ def draw_message_text():
 def on_draw(delta_time):
     arcade.get_window().clear()  # Sets the background color
 
+    draw_grass()
     draw_circular_tree(0, 0)
     draw_circular_tree(50, 0)
     draw_elliptical_tree()
@@ -84,4 +87,5 @@ def main():
     arcade.run()
 
 # Call the main function to get the program started.
-main()
+if __name__ == "__main__":
+    main()
