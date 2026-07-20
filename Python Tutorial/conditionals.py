@@ -1,10 +1,3 @@
-# Sample Python/Pygame Programs
-# Simpson College Computer Science
-# http://programarcadegames.com/
-# http://simpson.edu/computer-science/
-
-# Explanation video: http://youtu.be/pDpNSck2aXQ
-
 # Variables used in the example if statements
 a = 4
 b = 5
@@ -72,10 +65,6 @@ if "A":
 if 0:
     print("Zero")
 
-# Comparing variables to multiple values.
-# The first if statement appears to work, but it will always
-# trigger as true even if the variable a is not equal to b.
-# This is because "b" by itself is considered true.
 a = "c"
 if a == "B" or "b":
     print("a is equal to b. Maybe.")
